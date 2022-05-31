@@ -44,11 +44,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: linear-gradient(to top, rgb(252, 252,252), rgb(252, 221, 221));
 }
 
 .header img {
     width: 24%;
     object-fit: scale-down;
+}
+.header img:hover{
+    transform: rotate(15deg);
 }
 
 .header h1 {
@@ -89,7 +93,8 @@ h1 {
 }
 
 .menu li a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
+    font-size: 80%;
 }
 
 .main {
@@ -146,6 +151,9 @@ h1 {
     max-width: 100%;
     object-fit: scale-down;
 }
+.tutoriales ol li iframe:hover{
+    transform: scale(1.2, 1.2);
+}
 
 /* tutoriales */
 /* index */
@@ -162,6 +170,9 @@ h1 {
     object-fit: scale-down;
     padding-bottom: 20px;
     /*    margin: 0 auto; */
+}
+.novedades__items iframe:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .seccion__dirijido h3 {
@@ -224,6 +235,10 @@ h1 {
 }
 /* quienes somos */
 /* contacto */
+.config__animation {
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+}
 .datosPersonales label {
     padding-bottom: 5px;
     padding-top: 10px;
@@ -280,6 +295,10 @@ h1 {
     .menu li a {
         font-size: 60%;
     }
+    .menu li a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        font-size: 80%;
+    }
 
     .main {
         background-image: url("../img/FONDO.png"), url("");
@@ -292,6 +311,10 @@ h1 {
     }
     .footer p {
         font-size: 100%;
+    }
+    .footer p:hover{
+        font-size: 110%;
+        color: whitesmoke;
     }
     .textoQuienesSomos{
         padding-bottom: 100px;
