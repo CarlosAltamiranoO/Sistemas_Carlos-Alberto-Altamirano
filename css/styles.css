@@ -25,6 +25,11 @@
     src: url("../fonts/Cascadia.ttf");
 }
 
+.fondo{
+    background-image: url("../img/imageFooter3.jpg"), url("");
+    background-size: cover;
+}
+
 
 .body {
 
