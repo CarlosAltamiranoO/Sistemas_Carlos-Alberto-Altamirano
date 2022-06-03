@@ -6,40 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUTORIALES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <img src="../img/logo.png" alt="logoEncavesado">
-        <h1>DEPARTAMENTO DE SISTEMAS</h1>
-        <img src="../img/logo_unc.png" alt="logoEncavesado2">
-    </header>
-    <nav class="nav">
-        <ul class="menu">
-            <li>
-                <a href="../index.html">HOME</a>
-            </li>
-            <li>
-                <a href="#">TUTORIALES</a>
-            </li>
-            <li>
-                <a href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
-            </li>
-            <li>
-                <a href="./quienesSomos.html">QUIENES SOMOS</a>
-            </li>
-            <li>
-                <a href="./contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
+    <section class="sticky-top ">
+        <header class="header justify-content-between row ">
+            <section class="col-3 col-md-2 ">
+                <img class="img-fluid" src="../img/logo.png" alt="logoEncavesado">
+            </section>
+            <section class="col-6 col-md-8 ">
+                <h1 class="text-center">DEPARTAMENTO DE SISTEMAS</h1>
+            </section>
+            <section class="col-3 col-md-2 ">
+                <img class="img-fluid" src="../img/logo_unc.png" alt="logoEncavesado2">
+            </section>
+        </header>
+        <nav class=" navbar navbar-expand-md navbar-dark bg-danger ">
+            <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarText" type="button">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <section class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">TUTORIALES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./quienesSomos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </section>
     <main class="main">
         <h2 class="tituloMain">TUTORIALES DE MOODLE.</h2>
         <section class="tutoriales">
             <ol>
                 <li>
-                    <h3 class="nombreTutorial"><b>Introduccion a las Aulas Virtuales:</b> <em>Incluye aspectos:</em></h3>
+                    <h3 class="nombreTutorial"><b>Introduccion a las Aulas Virtuales:</b> <em>Incluye aspectos:</em>
+                    </h3>
                     <ul class="datosTutorial">
                         <li>Acceso a las aulas virtuales.</li>
                         <li>Edicion de contenido</li>
@@ -50,7 +66,8 @@
                         allowfullscreen></iframe>
                 </li>
                 <li>
-                    <h3 class="nombreTutorial"><b>Carga del Programa de la Materia:</b> <em>Incluye aspectos de :</em></h3>
+                    <h3 class="nombreTutorial"><b>Carga del Programa de la Materia:</b> <em>Incluye aspectos de :</em>
+                    </h3>
                     <ul class="datosTutorial">
                         <li>Edición.</li>
                         <li>Agregado de archivos.</li>
@@ -63,7 +80,8 @@
                         allowfullscreen></iframe>
                 </li>
                 <li>
-                    <h3  class="nombreTutorial"><b>Carga del Cronograma de la Materia:</b> <em>Incluye aspectos de :</em></h3>
+                    <h3 class="nombreTutorial"><b>Carga del Cronograma de la Materia:</b> <em>Incluye aspectos de :</em>
+                    </h3>
                     <ul class="datosTutorial">
                         <li>Edición del Cronograma.</li>
                         <li>Aspectos a tener en cuenta.</li>
@@ -89,12 +107,21 @@
         </section>
 
     </main>
-    <footer class="footer">
-        <img src="../img/UNC_Logo_2020-150x150.png" alt="logo unc">
-        <p>Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115 (Soporte Técnico y Sistemas),
-            int.38147
-            (Coordinación) Correo: sistemas@fcc.unc.edu.ar</p>
+    <footer class=" row fondo ">
+        <section class=" col-4 col-sm-3 col-md-2">
+            <img class="img-fluid" src="../img/UNC_Logo_2020-150x150.png" alt="logo unc">
+        </section>
+        <section class=" col-8 col-sm-9 col-md-10  d-flex align-items-end">
+            <p class="text-start">Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115 (Soporte Técnico y
+                Sistemas),
+                int.38147
+                (Coordinación) Correo: sistemas@fcc.unc.edu.ar</p>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
 
 </body>
 

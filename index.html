@@ -6,76 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./img/fcc.png">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-        <header class="header">
-            <img src="./img/logo.png" alt="logoEncavesado">
-            <h1>DEPARTAMENTO DE SISTEMAS</h1>
-            <img src="./img/logo_unc.png" alt="logoEncavesado2">
+    <section class="sticky-top ">
+        <header class="header justify-content-between row ">
+            <section class="col-3 col-md-2 ">
+                <img class="img-fluid" src="./img/logo.png" alt="logoEncavesado">
+            </section>
+            <section class="col-6 col-md-8 ">
+                <h1 class="text-center">DEPARTAMENTO DE SISTEMAS</h1>
+            </section>
+            <section class="col-3 col-md-2 ">
+                <img class="img-fluid" src="./img/logo_unc.png" alt="logoEncavesado2">
+            </section>
         </header>
-        <nav class="nav">
-            <ul class="menu">
-                <li>
-                    <a href="#">HOME</a>
-                </li>
-                <li>
-                    <a href="./pages/tutoriales.html">TUTORIALES</a>
-                </li>
-                <li>
-                    <a href="./pages/preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li>
-                    <a href="./pages/quienesSomos.html">QUIENES SOMOS</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class=" container-fluid navbar navbar-expand-md navbar-dark  bg-danger">
+            <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarText" type="button">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <section class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./pages/tutoriales.html">TUTORIALES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./pages/preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./pages/quienesSomos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </section>
         </nav>
+    </section>
 
-        <main class="main">
-                <section class="titulo__index">
-                    <h3>Bienvenidos estudiantes y/o profesores</h3>
-                </section>
-                <article class="novedades__items">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LNlytiJd9BI"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3vC8HKaaONg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_fLUiAmEV4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </article>
-                <section class="seccion__dirijido">
-                    <h3>A quien va dirigido:</h3>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum, molestias magnam
-                        nihil
-                        mollitia totam repellat maxime explicabo optio laborum! Repellat tenetur sequi, ducimus itaque
-                        harum
-                        dignissimos aut est minus.
-                        Laboriosam ab unde rem, vitae rerum, ullam similique qui explicabo, veniam fugiat aut! Suscipit,
-                        quasi asperiores qui corrupti iusto veritatis obcaecati repellendus delectus, maxime molestias
-                        inventore cumque, nulla voluptatum nobis!
-                        Amet delectus nisi obcaecati quae, corrupti facilis ullam? Quas doloremque, necessitatibus
-                        asperiores optio voluptates perspiciatis sint mollitia vero expedita non perferendis, voluptatem
-                        aliquid maiores laborum veniam aut exercitationem maxime. Eos? </p>
-                </section>
-        </main>
+    <main class="main ">
+            <p class="text-center fs-3">Bienvenidos estudiantes y/o profesores</p>
+        <article class="novedades__items">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LNlytiJd9BI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3vC8HKaaONg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_fLUiAmEV4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+        <section class="seccion__dirijido">
+            <h3>A quien va dirigido:</h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nostrum, molestias magnam
+                nihil
+                mollitia totam repellat maxime explicabo optio laborum! Repellat tenetur sequi, ducimus itaque
+                harum
+                dignissimos aut est minus.
+                Laboriosam ab unde rem, vitae rerum, ullam similique qui explicabo, veniam fugiat aut! Suscipit,
+                quasi asperiores qui corrupti iusto veritatis obcaecati repellendus delectus, maxime molestias
+                inventore cumque, nulla voluptatum nobis!
+                Amet delectus nisi obcaecati quae, corrupti facilis ullam? Quas doloremque, necessitatibus
+                asperiores optio voluptates perspiciatis sint mollitia vero expedita non perferendis, voluptatem
+                aliquid maiores laborum veniam aut exercitationem maxime. Eos? </p>
+        </section>
+    </main>
+    <footer class=" row fondo ">
+        <section class=" col-4 col-sm-3 col-md-2 ">
+            <img class="img-fluid" src="./img/UNC_Logo_2020-150x150.png" alt="logo unc">
 
-        <footer class="footer">
-            <img src="./img/UNC_Logo_2020-150x150.png" alt="logo unc">
-            <p>Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115 (Soporte Técnico y Sistemas),
+        </section>
+        <section class=" col-8 col-sm-9 col-md-10  d-flex align-items-end ">
+            <p class="text-start ">Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115 (Soporte Técnico
+                y
+                Sistemas),
                 int.38147
                 (Coordinación) Correo: sistemas@fcc.unc.edu.ar</p>
-        </footer>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
