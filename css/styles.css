@@ -1,7 +1,5 @@
 * {
     margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -25,424 +23,92 @@
     src: url("../fonts/Cascadia.ttf");
 }
 
-
-.body {
-
+body {
+    height: 100vh;
     display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 4% auto 8%;
-    grid-template-areas: "header header"
-        "nav nav"
-        "main main"
-        "footer footer"
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
 }
 
-.header {
+header {
     grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: linear-gradient(to top, rgb(252, 252,252), rgb(252, 221, 221));
+    background: linear-gradient(to top, rgb(252, 251, 251), rgb(252, 221, 221));
+
 }
 
-.header img {
-    width: 24%;
-    object-fit: scale-down;
-}
-.header img:hover{
-    transform: rotate(15deg);
-}
-
-.header h1 {
-    font-size: 120%;
-    text-align: center;
-    width: 49%;
-}
-
-h1 {
-    font-family: "Cascadia";
-}
-
-.nav {
+nav {
     grid-area: nav;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: "Amaranth-Italic";
-}
-
-.menu li {
-    background-color: #dd003b;
-    border: 1px solid grey;
-    /*    padding: 0.5%; */
-    border-radius: 3px;
-    width: 18%;
+.titulo {
+    font-size: x-large;
     text-align: center;
 }
 
-.menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 50%;
-}
-
-.menu li a:hover {
-    /* background: rgba(0, 0, 0, 0.3); */
-    font-size: 80%;
-}
-
-.main {
+main {
     grid-area: main;
-    height: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-image: url("../img/FONDO.png"), url("");
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: "Amaranth-Bold", "Amaranth-Regular";
+    justify-content: center;
+
 }
 
-.footer {
-    background-color: lightgrey;
+footer {
     grid-area: footer;
-    display: flex;
-    align-items: flex-end;
+    background-image: url("../img/imageFooter3.jpg"), url("");
 }
 
-.footer img {
-    height: 100%;
-    object-fit: scale-down;
-}
-
-.footer p {
-    font-size: 65%;
-    text-align: center;
-    font-family: "Cascadia";
-    max-width: 100%;
-    color: aliceblue;
-}
-
-/* tutoriales */
-
-.datosTutorial {
-    padding-left: 20px;
-    padding-bottom: 20px;
-
-}
-
-.tutoriales {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: left;
-    font-size: 80%;
-}
-
-.nombreTutorial {
-    padding-top: 40px;
-}
-
-.tutoriales ol li iframe {
-    max-width: 100%;
-    object-fit: scale-down;
-}
-.tutoriales ol li iframe:hover{
-    transform: scale(1.2, 1.2);
-}
-
-/* tutoriales */
-/* index */
-
-.novedades__items {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.novedades__items iframe {
-    width: 100%;
-    object-fit: scale-down;
-    padding-bottom: 20px;
-    /*    margin: 0 auto; */
-}
-.novedades__items iframe:hover{
-    transform: scale(1.1, 1.1);
-}
-
-.seccion__dirijido h3 {
-    text-align: center;
-}
-
-.seccion__dirijido p {
-    text-align: justify;
-    padding: 5px;
+.footer p:hover {
+    font-size: 110%;
 }
 
 /* index */
-/* Preguntas frecuentes */
-.PreguntasFrecuentes {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.titulo__main h3 {
+    text-align: center;
     padding: 20px;
 }
 
-.PreguntasFrecuentes img {
-    max-width: 100%;
-    padding-top: 10px;
-
+.contenido__dirigido {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.PreguntasFrecuentes h3 {
-    font-size: 90%;
-    padding-bottom: 10px;
-}
-
-.PreguntasFrecuentes ol {
-    padding-left: 15px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid salmon;
-    margin-bottom: 50px;
-    font-size: 90%;
-    background-color: rgba(114, 99, 99, 0.3);
-
-}
-
-.PreguntasFrecuentes li {
-    padding: 10px;
-}
-
-.nombrePregunta {
-    color: #dd003b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenido__dirigido h3 {
     text-align: center;
+    padding: 20px;
 }
 
-/* Preguntas frecuentes */
-/* quienes somos */
-.tituloQuienesSomos{
-    padding-top: 40px;
-}
-/* quienes somos */
-/* contacto */
-.config__animation {
-    animation-delay: 2s;
-    animation-iteration-count: 2;
-}
-.datosPersonales label {
-    padding-bottom: 5px;
-    padding-top: 10px;
-}
-
-.formulario fieldset {
-    max-width: 100%;
+/* index */
+/* preguntas frecuentes */
+.preguntas__frecuentes {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-}
-.main h3 {
-    font-size: 80%;
-    padding: 10px;
-}
-.usuarioUNC {
-    padding-top: 10px;   
-}
-.RadioBTN {
-    padding-top: 10px; 
-}
-.checkUsuarioL{
-    padding-right: 5px;
-}
-.boton {
-    width: 100px;
-    margin: 15px;
-    padding: 8px;
-}
-/* contacto */
-
-
-
-
-
-
-
-@media screen and (min-width: 600px) {
-    .header {
-        padding-bottom: 10px;
-    }
-
-    .header img {
-        width: 15%;
-    }
-
-    .header h1 {
-        font-size: 150%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .menu li a {
-        font-size: 60%;
-    }
-    .menu li a:hover {
-        background: rgba(0, 0, 0, 0.3);
-        font-size: 80%;
-    }
-
-    .main {
-        background-image: url("../img/FONDO.png"), url("");
-        background-size: cover;
-    }
-    .footer {
-        background-color: none;
-        background-image: url("../img/imageFooter3.jpg"), url("");
-        background-size: cover;
-    }
-    .footer p {
-        font-size: 100%;
-    }
-    .footer p:hover{
-        font-size: 110%;
-        color: rgb(215, 17, 17);
-    }
-    .textoQuienesSomos{
-        padding-bottom: 100px;
-    }
-    .main h3 {
-        font-size: 100%;
-    }
-    .formulario {
-        background-color: rgb(235, 128, 133);
-        width: 60%;
-        border-radius: 10px;
-        padding: 5px;
-    }
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90vw;
+    padding: 5px;
 }
 
-@media screen and (min-width: 1024px) {
-    .cuerpo {
-        display: grid;
-        width: 100%;
-        height: 100%;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 10% 5% 86.5% 15%;
-        /* uso 86.5% en main para que ocupe toda la pantalla ya que no encontre forma de que el footer quede en el fondo
-        y no quiero ponerlo en potition static  me queda revisar como solucionar eso*/
-        grid-template-areas: "header header header"
-            "nav nav nav"
-            "main main main"
-            "footer footer footer";
-    }
-
-    .header img {
-        width: 10%;
-    }
-
-    .header h1 {
-        width: 70%;
-        font-size: 200%;
-    }
-
-    .nav {
-
-        background-color: #dd003b;
-    }
-
-    .menu {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-    }
-
-    .menu li {
-        border: 0;
-        padding: 0;
-        width: fit-content;
-    }
-
-    .menu li a {
-        text-decoration: none;
-        padding: 15px;
-    }
-
-    .novedades__items {
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-    }
-
-    .novedades__items iframe {
-        padding: 15px;
-
-    }
-
-    .titulo__index {
-        width: 100%;
-        padding-left: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-    }
-
-    .seccion__dirijido {
-        padding-top: 50px;
-        max-width: 90%;
-    }
-
-    .tutoriales {
-        width: 100%;
-        padding: 50px;
-        display: flex;
-        justify-content: left;
-        font-size: 100%;
-
-    }
-
-    .PreguntasFrecuentes {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 80px;
-        width: 100%;
-
-    }
-
-    .PreguntasFrecuentes img {
-        max-width: 90%;
-
-
-    }
-
-    .PreguntasFrecuentes h3 {
-        padding-bottom: 10px;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-
-    .PreguntasFrecuentes ol {
-        padding-left: 30px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        margin-bottom: 50px;
-        font-size: 18px;
-        max-width: 60%;
-    }
-
+.preguntas__frecuentes ol {
+    background-color: rgba(114, 99, 99, 0.3);
+    border-bottom: 2px solid salmon;
 }
 
+.preguntas__frecuentes img {
+    display: flex;
+    max-width: 100%;
+}
+
+.preguntas__frecuentes p {
+    text-align: justify;
+    margin: 5px;
+    max-width: 1000px;
+}
+/* preguntas frecuentes */
