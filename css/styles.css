@@ -125,6 +125,7 @@ h1 {
     text-align: center;
     font-family: "Cascadia";
     max-width: 100%;
+    color: aliceblue;
 }
 
 /* tutoriales */
@@ -314,7 +315,7 @@ h1 {
     }
     .footer p:hover{
         font-size: 110%;
-        color: whitesmoke;
+        color: rgb(215, 17, 17);
     }
     .textoQuienesSomos{
         padding-bottom: 100px;
