@@ -39,6 +39,16 @@ header {
     background: linear-gradient(to top, rgb(252, 251, 251), rgb(252, 221, 221));
 
 }
+.img__1:hover {
+    transform: rotate(15deg);
+}
+.img__2:hover {
+    transform: rotate(345deg);
+}
+/* .header img:hover{
+    transform: rotate(15deg);
+} */
+
 
 nav {
     grid-area: nav;
@@ -47,6 +57,7 @@ nav {
 .titulo {
     font-size: x-large;
     text-align: center;
+    font-weight: bold;
 }
 
 main {
@@ -64,25 +75,29 @@ footer {
     background-image: url("../img/imageFooter3.jpg"), url("");
 }
 
-.footer p:hover {
-    font-size: 110%;
-}
+
 
 /* index */
 .titulo__main h3 {
+    margin-top: 20px;
     text-align: center;
     padding: 20px;
+    color: darkred;
 }
 
 .contenido__dirigido {
-    width: 80vw;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    font-size: 150%;
+    text-align: justify;
 }
 
 .contenido__dirigido h3 {
+    margin-top: 30px;
     text-align: center;
     padding: 20px;
+    font-size: larger;
 }
 
 /* index */
@@ -92,13 +107,14 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 90vw;
     padding: 5px;
 }
 
 .preguntas__frecuentes ol {
     background-color: rgba(114, 99, 99, 0.3);
     border-bottom: 2px solid salmon;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .preguntas__frecuentes img {
@@ -109,6 +125,89 @@ footer {
 .preguntas__frecuentes p {
     text-align: justify;
     margin: 5px;
-    max-width: 1000px;
 }
+
 /* preguntas frecuentes */
+/* tutoriales */
+.tutoriales {
+    display: flex;
+    align-items: flex-start;
+    max-width: 90vw;
+    padding: 5px;
+}
+
+.tutoriales ol {
+    font-size: 200%;
+}
+
+.tutorial__item {
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(114, 99, 99, 0.2);
+    border: 2px solid salmon;
+    border-radius: 6px;
+}
+
+.tutorial__item ul {
+    font-size: medium;
+}
+
+/* tutoriales */
+
+@media screen and (min-width: 600px) {
+    .footer p:hover {
+        font-size: 110%;
+    }
+
+    .contenido__dirigido {
+        width: 80vw;
+    }
+
+
+    .preguntas__frecuentes {
+        width: 90vw;
+    }
+
+
+    .tutoriales ol {
+        font-size: medium;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .contenido__dirigido {
+            width: 70vw;
+            text-align: center;
+        }
+
+        .preguntas__frecuentes ol {
+            font-weight: normal;
+            font-size:medium;
+            width: 70vw;
+        }
+
+        /* transcicion de zoom a img preguntas frecuentes */
+        .img__preg__frecuente{
+            overflow: hidden;
+            margin: 15px;
+        }
+        .img__preg__frecuente img{
+            transition: 0.5s;
+            object-fit: cover;
+        }
+        .img__preg__frecuente img:hover{
+            transform: scale(1.2);
+        }
+        /* transcicion de zoom a img preguntas frecuentes */
+
+
+        .tutorial__item {
+            border-radius: 0;
+            width: 60vw;
+        }
+
+        .tutoriales {
+            width: 70vw;
+        }
+
+    }
+}
