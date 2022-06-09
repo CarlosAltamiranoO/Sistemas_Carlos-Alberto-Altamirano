@@ -1,5 +1,6 @@
 @import 'headerFooter';
 @import 'tipografias';
+@import 'variables';
 
 * {
     margin: 0%;
@@ -65,6 +66,7 @@ footer {
 }
 
 /* index */
+
 /* preguntas frecuentes */
 .preguntas__frecuentes {
     width: 100vw;
@@ -156,23 +158,23 @@ footer {
 
 @media screen and (min-width: 1024px) {
     .contenido__dirigido {
-        width: 70vw;
+        width: $ancho-monitor;
         text-align: center;
     }
 
     .preguntas__frecuentes ol {
         font-weight: normal;
         font-size: medium;
-        width: 70vw;
+        width: $ancho-monitor;
     }
 
     .tutorial__item {
         border-radius: 0;
-        width: 60vw;
+        width: $ancho-monitor;
     }
 
     .tutoriales {
-        width: 70vw;
+        width: $ancho-monitor;
     }
 
 }
