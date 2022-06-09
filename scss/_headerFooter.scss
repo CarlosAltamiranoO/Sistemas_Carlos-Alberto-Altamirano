@@ -1,0 +1,23 @@
+header {
+    background: linear-gradient(to top, rgb(252, 251, 251), rgb(252, 221, 221));
+
+    .img__1:hover {
+        transform: rotate(15deg);
+    }
+
+    .img__2:hover {
+        transform: rotate(345deg);
+    }
+
+    .titulo {
+        font-size: x-large;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Cascadia";
+    }
+
+}
+
+footer {
+    background-image: url("../img/imageFooter3.jpg"), url("");
+}

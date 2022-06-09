@@ -1,5 +1,178 @@
+@import 'headerFooter';
+@import 'tipografias';
+
 * {
     margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    background-image: url("../img/FONDO.png"), url("");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Amaranth";
+
+    .titulo__main h3 {
+        margin-top: 20px;
+        text-align: center;
+        padding: 20px;
+        color: darkred;
+    }
+
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+/* index */
+.contenido__dirigido {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+    text-align: justify;
+
+    h3 {
+        margin-top: 30px;
+        text-align: center;
+        padding: 20px;
+        font-size: larger;
+    }
+}
+
+/* index */
+/* preguntas frecuentes */
+.preguntas__frecuentes {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 4px;
+
+    ol {
+        background-color: rgba(114, 99, 99, 0.3);
+        border-bottom: 2px solid salmon;
+        font-weight: bold;
+        font-size: larger;
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+        li {
+            padding: 4px;
+            width: 90%;
+
+            p {
+                text-align: justify;
+            }
+
+            .img__preg__frecuente {
+                display: flex;
+                margin: 20px;
+
+                img {
+                    max-width: 95%;
+                    transition: 0.5s;
+                    object-fit: cover;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tutoriales {
+    display: flex;
+    align-items: flex-start;
+    max-width: 90vw;
+    padding: 5px;
+
+    ol {
+        font-size: 200%;
+
+        li {
+            padding: 5px;
+            margin-bottom: 20px;
+            background-color: rgba(114, 99, 99, 0.2);
+            border: 2px solid salmon;
+            border-radius: 6px;
+
+            ul {
+                font-size: medium;
+            }
+        }
+    }
+
+}
+
+/* tutoriales */
+
+@media screen and (min-width: 600px) {
+    .footer p:hover {
+        font-size: 110%;
+    }
+
+    .contenido__dirigido {
+        width: 80vw;
+    }
+
+    .preguntas__frecuentes {
+        width: 85vw;
+    }
+
+    .tutoriales ol {
+        font-size: medium;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .contenido__dirigido {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .preguntas__frecuentes ol {
+        font-weight: normal;
+        font-size: medium;
+        width: 70vw;
+    }
+
+    .tutorial__item {
+        border-radius: 0;
+        width: 60vw;
+    }
+
+    .tutoriales {
+        width: 70vw;
+    }
+
 }
