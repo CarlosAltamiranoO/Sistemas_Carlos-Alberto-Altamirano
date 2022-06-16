@@ -6,75 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMTACTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <img src="../img/logo.png" alt="logoEncavesado">
-        <h1>DEPARTAMENTO DE SISTEMAS</h1>
-        <img src="../img/logo_unc.png" alt="logoEncavesado2">
+    <header class="header row align-items-center p-0 m-0">
+        <div class="col col-3  col-lg-2 col-xxl-1 container-fluid p-1 m-0">
+            <img class="img-fluid float-start  img__1" src="../img/logo.png" alt="logoEncavesado">
+        </div>
+        <div class="col col-6 col-lg-8 col-xxl-10 container-fluid  p-0 m-0">
+            <p class="titulo">DEPARTAMENTO DE SISTEMAS</p>
+        </div>
+        <div class="col col-3  col-lg-2 col-xxl-1 container-fluid p-1  m-0">
+            <img class=" img-fluid float-end  img__2" src="../img/logo_unc.png" alt="logoEncavesado2">
+        </div>
     </header>
-    <nav class="nav">
-        <ul class="menu">
-            <li>
-                <a href="../index.html">HOME</a>
-            </li>
-            <li>
-                <a href="./tutoriales.html">TUTORIALES</a>
-            </li>
-            <li>
-                <a href="./preguntasFrecuentes.html">PREGUNTAS FRECUENTES</a>
-            </li>
-            <li>
-                <a href="./quienesSomos.html">QUIENES SOMOS</a>
-            </li>
-            <li>
-                <a href="#">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="main">
-        <h3>CONTACTO</h3>
-        <h3 class="animate__animated animate__headShake config__animation"><em> Recuerde que debido al bolumen de mail puede tardar su respuesta</em></h3>
-        <form action="" method="get" class="formulario">
-            <fieldset class="datosPersonales">
-                <legend>Datos personales</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Juan">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Perez">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@mail.com">
-            </fieldset>
-            <fieldset class="consulta">
-                <textarea class="areaTexto" name="consulta" id="consulta" cols="30" rows="10"
-                    placeholder="Ingresa tus consulta"></textarea>
-            </fieldset>
-            <div class="botones">
-                <div class="RadioBTN">
-                    <label>Soy estudiante </label>
-                    <input type="radio" name="usuario" value="estudiante" />
-                    <label>Soy Profesor </label>
-                    <input type="radio" name="usuario" value="profesor" />
-                </div>
-
-                <section class="usuarioUNC">
-                    <label for="checkUsuarioUNC" class="checkUsuarioL"><b>Pertenesco a la UNC</b></label>
-                    <input type="checkbox" name="UsuarioUNC" id="check-Usuario" class="checkUsuario">
-                </section>
-                <input type="reset" value="Limpiar" class="limpiar boton">
-                <input type="submit" value="Enviar" class="enviar boton">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger m-0 p-0">
+        <div class="container-fluid">
+            <!--           <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tutoriales.html">Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </form>
+        </div>
+    </nav>
+    <main>
+        <section class="titulo__main">
+            <h3>CONTACTO</h3>
+            <h3 class="animate__animated animate__headShake config__animation"><em> Recuerde que debido al bolumen de
+                    mail
+                    puede tardar su respuesta</em></h3>
+        </section>
+        <!--         <h3 class="animate__animated animate__headShake config__animation"><em> Recuerde que debido al bolumen de mail
+                puede tardar su respuesta</em></h3> -->
+        <section class="contenedor__formulario">
+            <form action="" method="get" class="formulario">
+                <fieldset class="datos_personales">
+                    <legend>Datos personales</legend>
+                    <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Perez">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@mail.com">
+                </div>
+                </fieldset>
+                <fieldset class="consulta">
+                    <textarea name="consulta" id="consulta" cols="30" rows="10"
+                        placeholder="Ingresa tus consulta"></textarea>
+                </fieldset>
+                <div class="botones__seccion">
+                    <div class="RadioBTN">
+                        <label>Soy estudiante </label>
+                        <input type="radio" name="usuario" value="estudiante" />
+                        <label>Soy Profesor </label>
+                        <input type="radio" name="usuario" value="profesor" />
+                    </div>
+                    <section class="usuarioUNC">
+                        <label for="checkUsuarioUNC" class="checkUsuarioL"><b>Pertenesco a la UNC</b></label>
+                        <input type="checkbox" name="UsuarioUNC" id="check-Usuario" class="checkUsuario">
+                    </section>
+                    <section class="botones">
+                        <input type="reset" value="Limpiar" class="limpiar boton">
+                        <input type="submit" value="Enviar" class="enviar boton">
+                    </section>
+                </div>
+            </form>
+        </section>
     </main>
-    <footer class="footer">
-        <img src="../img/UNC_Logo_2020-150x150.png" alt="logo unc">
-        <p>Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115 (Soporte Técnico y Sistemas),
-            int.38147
-            (Coordinación) Correo: sistemas@fcc.unc.edu.ar</p>
+    <footer class="footer container-fluid row p-0 m-0">
+        <section class="col-4 col-sm-3 col-md-2 container-fluid p-0">
+            <img class="img-fluid" src="../img/UNC_Logo_2020-150x150.png" alt="logo unc">
+        </section>
+        <section class=" col-8 col-sm-9 col-md-10 container-fluid d-flex align-items-end p-0">
+            <p class="text-center text-light">Datos de contacto: Teléfono: (0351) 5353680 int. 38142 o int. 38115
+                (Soporte Técnico y Sistemas), int.38147 (Coordinación) Correo: sistemas@fcc.unc.edu.ar</p>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </body>
 

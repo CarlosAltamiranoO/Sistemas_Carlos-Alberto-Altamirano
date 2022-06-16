@@ -63,13 +63,13 @@ footer {
   grid-area: footer; }
 
 /* index */
-.contenido__dirigido {
+.contenido__texto {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
   font-size: 150%;
   text-align: justify; }
-  .contenido__dirigido h3 {
+  .contenido__texto h3 {
     margin-top: 30px;
     text-align: center;
     padding: 20px;
@@ -124,18 +124,64 @@ footer {
         font-size: medium; }
 
 /* tutoriales */
+/* contacto */
+.config__animation {
+  animation-delay: 2s;
+  animation-iteration-count: 2; }
+
+.contenedor__formulario form {
+  width: 90%;
+  background-color: rgba(114, 99, 99, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border: 3px solid red;
+  border-radius: 3px; }
+  .contenedor__formulario form .datos_personales {
+    border: 1px solid red;
+    padding: 4px; }
+    .contenedor__formulario form .datos_personales div {
+      margin: 4px; }
+      .contenedor__formulario form .datos_personales div label {
+        width: 15%;
+        text-align: end;
+        padding-right: 4px; }
+      .contenedor__formulario form .datos_personales div input {
+        width: 80%; }
+  .contenedor__formulario form .consulta {
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 10px; }
+    .contenedor__formulario form .consulta textarea {
+      width: 90%; }
+  .contenedor__formulario form .botones__seccion {
+    padding: 10px; }
+    .contenedor__formulario form .botones__seccion .botones {
+      padding: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .contenedor__formulario form .botones__seccion .botones input {
+        width: 40%;
+        margin: 5px;
+        border: 2px solid; }
+
+/* contacto */
 @media screen and (min-width: 600px) {
   .footer p:hover {
     font-size: 110%; }
-  .contenido__dirigido {
+  .contenido__texto {
     width: 80vw; }
   .preguntas__frecuentes {
     width: 85vw; }
   .tutoriales ol {
-    font-size: medium; } }
+    font-size: medium; }
+  .contenedor__formulario form {
+    width: 70%; } }
 
 @media screen and (min-width: 1024px) {
-  .contenido__dirigido {
+  .contenido__texto {
     width: 70vw;
     text-align: center; }
   .preguntas__frecuentes ol {
@@ -146,4 +192,8 @@ footer {
     border-radius: 0;
     width: 70vw; }
   .tutoriales {
-    width: 70vw; } }
+    width: 70vw; }
+  .contenedor__formulario form {
+    width: 50%; }
+    .contenedor__formulario form .botones__seccion .botones input {
+      width: 30%; } }
