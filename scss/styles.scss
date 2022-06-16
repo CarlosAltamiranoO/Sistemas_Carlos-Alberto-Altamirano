@@ -1,6 +1,7 @@
 @import 'headerFooter';
 @import 'tipografias';
 @import 'variables';
+@import 'mixins';
 
 * {
     margin: 0%;
@@ -26,6 +27,7 @@ nav {
 }
 
 main {
+    @include pad_vertical(40px, 30px);
     grid-area: main;
     background-image: url("../img/FONDO.png"), url("");
     background-size: cover;
@@ -34,10 +36,9 @@ main {
     justify-content: center;
     font-family: "Amaranth";
 
+
     .titulo__main h3 {
-        margin-top: 20px;
         text-align: center;
-        padding: 20px;
         color: darkred;
     }
 
@@ -58,9 +59,10 @@ footer {
     text-align: justify;
 
     h3 {
-        margin-top: 30px;
+        @include pad_vertical(20px, 5px);
         text-align: center;
-        padding: 20px;
+        text-decoration:underline;
+        font-weight: bold;
         font-size: larger;
     }
 }
@@ -78,13 +80,11 @@ footer {
     padding: 4px;
 
     ol {
+        @include pad_vertical(10px, 20px);
         background-color: rgba(114, 99, 99, 0.3);
         border-bottom: 2px solid salmon;
         font-weight: bold;
         font-size: larger;
-        padding-bottom: 20px;
-        padding-top: 10px;
-
         li {
             padding: 4px;
             width: 90%;
@@ -136,6 +136,8 @@ footer {
 }
 
 /* tutoriales */
+
+
 /* contacto */
 .config__animation {
     animation-delay: 2s;
@@ -149,6 +151,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
+        /* ________________________________________________________________ */
         border: 3px solid red;
         border-radius: 3px;
 
@@ -190,20 +193,57 @@ footer {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-
-                input {
-                    width: 40%;
-                    margin: 5px;
-                    border: 2px solid;
-                }
             }
         }
     }
 }
+
+/* extent */
+boton {
+    width: 40%;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.limpiar__boton {
+    @extend boton;
+    background-color: red;
+}
+
+.enviar__boton {
+    @extend boton;
+    background-color: green;
+}
+
+/* extent */
 /* contacto */
 
+/* quienes somos  */
+.img__muestra {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 
-@media screen and (min-width: 600px) {
+    img {
+        max-width: 400px;
+        margin: 10px;
+    }
+}
+
+/* mapa */
+@each $var,
+$valor in $map__img {
+    .imagen__#{$var} {
+        border: $valor;
+    }
+}
+
+/* mapa */
+/* wuienes somos */
+
+
+@media screen and (min-width: map-get($map__ancho, medio)) {
     .footer p:hover {
         font-size: 110%;
     }
@@ -226,7 +266,8 @@ footer {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: map-get($map__ancho, alto)) {
+
     .contenido__texto {
         width: $ancho-monitor;
         text-align: center;

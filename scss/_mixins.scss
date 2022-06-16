@@ -1,0 +1,4 @@
+@mixin pad_vertical($top, $botton) {
+    padding-top: $top;
+    padding-bottom: $botton;   
+}
