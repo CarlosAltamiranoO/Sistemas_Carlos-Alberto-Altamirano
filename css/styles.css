@@ -80,13 +80,12 @@ footer {
 /* index */
 /* preguntas frecuentes */
 .preguntas__frecuentes {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  padding: 4px; }
+  align-items: flex-start; }
   .preguntas__frecuentes ol {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -95,7 +94,6 @@ footer {
     font-weight: bold;
     font-size: larger; }
     .preguntas__frecuentes ol li {
-      padding: 4px;
       width: 90%; }
       .preguntas__frecuentes ol li p {
         text-align: justify; }
@@ -103,12 +101,14 @@ footer {
         display: flex;
         margin: 20px; }
         .preguntas__frecuentes ol li .img__preg__frecuente img {
-          max-width: 95%;
+          max-width: 100%;
           transition: 0.5s;
           object-fit: cover; }
           .preguntas__frecuentes ol li .img__preg__frecuente img:hover {
             transform: scale(1.2); }
 
+/* preguntas frecuentes */
+/* tutoriales */
 .tutoriales {
   display: flex;
   align-items: flex-start;
@@ -131,40 +131,43 @@ footer {
   animation-delay: 2s;
   animation-iteration-count: 2; }
 
-.contenedor__formulario form {
-  width: 90%;
-  background-color: rgba(114, 99, 99, 0.2);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  /* ________________________________________________________________ */
-  border: 3px solid red;
-  border-radius: 3px; }
-  .contenedor__formulario form .datos_personales {
-    border: 1px solid red;
-    padding: 4px; }
-    .contenedor__formulario form .datos_personales div {
-      margin: 4px; }
-      .contenedor__formulario form .datos_personales div label {
-        width: 15%;
-        text-align: end;
-        padding-right: 4px; }
-      .contenedor__formulario form .datos_personales div input {
-        width: 80%; }
-  .contenedor__formulario form .consulta {
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
-    padding: 10px; }
-    .contenedor__formulario form .consulta textarea {
-      width: 90%; }
-  .contenedor__formulario form .botones__seccion {
-    padding: 10px; }
-    .contenedor__formulario form .botones__seccion .botones {
-      padding: 5px;
-      width: 100%;
+.contenedor__formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .contenedor__formulario form {
+    width: 90%;
+    background-color: rgba(114, 99, 99, 0.2);
+    border: 3px solid red;
+    border-radius: 3px;
+    padding: 1px; }
+    .contenedor__formulario form .datos_personales {
+      padding-top: 8px;
+      padding-bottom: 10px;
+      border: 2px solid red;
+      padding-left: 4px; }
+      .contenedor__formulario form .datos_personales div {
+        margin: 5px; }
+        .contenedor__formulario form .datos_personales div label {
+          width: 15%;
+          text-align: end; }
+        .contenedor__formulario form .datos_personales div input {
+          width: 78%; }
+    .contenedor__formulario form .consulta {
+      margin-top: 2px;
+      /* para espacion entre los dos bloques  */
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      border: 2px solid red;
+      padding: 10px; }
+      .contenedor__formulario form .consulta textarea {
+        width: 90%; }
+    .contenedor__formulario form .botones__seccion {
+      padding: 10px; }
+      .contenedor__formulario form .botones__seccion .botones {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
 
 /* extent */
 boton, .limpiar__boton, .enviar__boton {
@@ -177,7 +180,7 @@ boton, .limpiar__boton, .enviar__boton {
   background-color: red; }
 
 .enviar__boton {
-  background-color: green; }
+  background-color: lightgreen; }
 
 /* extent */
 /* contacto */
@@ -228,6 +231,6 @@ boton, .limpiar__boton, .enviar__boton {
   .tutoriales {
     width: 70vw; }
   .contenedor__formulario form {
-    width: 50%; }
+    width: 40%; }
     .contenedor__formulario form .botones__seccion .botones input {
       width: 30%; } }

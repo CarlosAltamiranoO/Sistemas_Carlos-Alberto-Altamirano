@@ -61,7 +61,7 @@ footer {
     h3 {
         @include pad_vertical(20px, 5px);
         text-align: center;
-        text-decoration:underline;
+        text-decoration: underline;
         font-weight: bold;
         font-size: larger;
     }
@@ -71,13 +71,12 @@ footer {
 
 /* preguntas frecuentes */
 .preguntas__frecuentes {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 4px;
 
     ol {
         @include pad_vertical(10px, 20px);
@@ -85,8 +84,8 @@ footer {
         border-bottom: 2px solid salmon;
         font-weight: bold;
         font-size: larger;
+
         li {
-            padding: 4px;
             width: 90%;
 
             p {
@@ -98,7 +97,7 @@ footer {
                 margin: 20px;
 
                 img {
-                    max-width: 95%;
+                    max-width: 100%;
                     transition: 0.5s;
                     object-fit: cover;
 
@@ -110,6 +109,10 @@ footer {
         }
     }
 }
+
+/* preguntas frecuentes */
+
+/* tutoriales */
 
 .tutoriales {
     display: flex;
@@ -145,39 +148,40 @@ footer {
 }
 
 .contenedor__formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     form {
         width: 90%;
         background-color: rgba(114, 99, 99, 0.2);
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        /* ________________________________________________________________ */
         border: 3px solid red;
         border-radius: 3px;
+        padding: 1px;
 
         .datos_personales {
-            border: 1px solid red;
-            padding: 4px;
+            @include pad_vertical(8px, 10px);
+            border: 2px solid red;
+            padding-left: 4px;
 
             div {
-                margin: 4px;
+                margin: 5px;
 
                 label {
                     width: 15%;
                     text-align: end;
-                    padding-right: 4px;
                 }
 
                 input {
-                    width: 80%;
+                    width: 78%;
                 }
             }
         }
 
         .consulta {
+            margin-top: 2px; /* para espacion entre los dos bloques  */
             display: flex;
             justify-content: center;
-            border: 1px solid red;
+            border: 2px solid red;
             padding: 10px;
 
             textarea {
@@ -189,7 +193,6 @@ footer {
             padding: 10px;
 
             .botones {
-                padding: 5px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -208,12 +211,12 @@ boton {
 
 .limpiar__boton {
     @extend boton;
-    background-color: red;
+    background-color:red;
 }
 
 .enviar__boton {
     @extend boton;
-    background-color: green;
+    background-color: lightgreen;
 }
 
 /* extent */
@@ -289,7 +292,7 @@ $valor in $map__img {
     }
 
     .contenedor__formulario form {
-        width: 50%;
+        width: 40%;
 
         .botones__seccion .botones input {
             width: 30%;
