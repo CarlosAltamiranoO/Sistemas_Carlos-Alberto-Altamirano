@@ -10,10 +10,17 @@ header {
     }
 
     .titulo {
-        font-size: x-large;
+        font-size:small;
         text-align: center;
         font-weight: bold;
         font-family: "Cascadia";
+    }
+
+    @media screen and (min-width:600px) {
+
+        .titulo {
+            font-size: x-large;
+        }
     }
 
 }

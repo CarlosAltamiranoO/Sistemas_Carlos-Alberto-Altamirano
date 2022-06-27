@@ -242,8 +242,8 @@ boton {
     justify-content: center;
 
     img {
-        max-width: 400px;
         margin: 10px;
+        max-width: 260px;
     }
 }
 
@@ -260,6 +260,7 @@ $valor in $map__img {
 
 
 @media screen and (min-width: map-get($map__ancho, medio)) {
+
     .footer p:hover {
         font-size: 110%;
     }
