@@ -35,7 +35,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Amaranth";
+    font-family: "IBM-regular";
 
 
     .titulo__main h3 {
@@ -236,6 +236,12 @@ boton {
 /* contacto */
 
 /* quienes somos  */
+.funciones{
+    text-align: justify;
+    p{
+        @include pad_vertical(15px, 2px);
+    }
+}
 .img__muestra {
     display: flex;
     flex-flow: wrap;
@@ -280,6 +286,9 @@ $valor in $map__img {
     .contenedor__formulario form {
         width: 70%;
     }
+    main {
+        font-size: small;
+    }
 
 }
 
@@ -288,6 +297,9 @@ $valor in $map__img {
     .contenido__texto {
         width: $ancho-monitor;
         text-align: center;
+    }
+    .funciones{
+        width: $ancho-monitor;
     }
 
     .preguntas__frecuentes ol {

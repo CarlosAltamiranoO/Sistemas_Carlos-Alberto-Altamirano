@@ -3,7 +3,8 @@ header {
   header .titulo {
     text-align: center;
     font-weight: bold;
-    font-family: "Cascadia"; }
+    font-family: "Cascadia";
+    color: #3e0808; }
   @media screen and (min-width: 600px) {
     header .titulo {
       font-size: x-large; } }
@@ -30,6 +31,10 @@ footer {
   font-family: "Cascadia";
   src: url("../fonts/Cascadia.ttf"); }
 
+@font-face {
+  font-family: "IBM-regular";
+  src: url("../fonts/IBMPlexSans-Regular.ttf"); }
+
 * {
   margin: 0%; }
 
@@ -55,7 +60,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Amaranth"; }
+  font-family: "IBM-regular"; }
   main .titulo__main h3 {
     text-align: center;
     color: darkred;
@@ -193,6 +198,12 @@ boton, .limpiar__boton, .enviar__boton {
 /* extent */
 /* contacto */
 /* quienes somos  */
+.funciones {
+  text-align: justify; }
+  .funciones p {
+    padding-top: 15px;
+    padding-bottom: 2px; }
+
 .img__muestra {
   display: flex;
   flex-flow: wrap;
@@ -223,19 +234,23 @@ boton, .limpiar__boton, .enviar__boton {
   .tutoriales ol {
     font-size: medium; }
   .contenedor__formulario form {
-    width: 70%; } }
+    width: 70%; }
+  main {
+    font-size: small; } }
 
 @media screen and (min-width: 1024px) {
   .contenido__texto {
-    width: 70vw;
+    width: 60vw;
     text-align: center; }
+  .funciones {
+    width: 60vw; }
   .preguntas__frecuentes ol {
     font-weight: normal;
     font-size: medium;
-    width: 70vw; }
+    width: 60vw; }
   .tutorial__item {
     border-radius: 0;
-    width: 70vw; }
+    width: 60vw; }
   .contenedor__formulario form {
     width: 40%; }
     .contenedor__formulario form .botones__seccion .botones input {
