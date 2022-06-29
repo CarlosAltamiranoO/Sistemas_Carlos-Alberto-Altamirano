@@ -1,17 +1,15 @@
 header {
   background: linear-gradient(to top, #fcfbfb, #fcdddd); }
-  header .img__1:hover {
-    transform: rotate(15deg); }
-  header .img__2:hover {
-    transform: rotate(345deg); }
   header .titulo {
-    font-size: small;
     text-align: center;
     font-weight: bold;
     font-family: "Cascadia"; }
   @media screen and (min-width: 600px) {
     header .titulo {
       font-size: x-large; } }
+  @media screen and (min-width: 1024px) {
+    header .titulo {
+      font-size: 240%; } }
 
 footer {
   background-image: url("../img/imageFooter3.jpg"), url(""); }
