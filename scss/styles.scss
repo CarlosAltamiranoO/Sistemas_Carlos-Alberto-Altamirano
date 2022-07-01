@@ -82,7 +82,7 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
 
-    .nombrePregunta {
+    .nombre__Pregunta {
         width: 100%;
         text-align: center
     }
@@ -235,7 +235,7 @@ boton {
 /* extent */
 /* contacto */
 
-/* quienes somos  */
+/* funciones */
 .funciones{
     text-align: justify;
     p{
@@ -262,7 +262,7 @@ $valor in $map__img {
 }
 
 /* mapa */
-/* wuienes somos */
+/* funciones */
 
 
 @media screen and (min-width: map-get($map__ancho, medio)) {

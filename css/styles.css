@@ -16,18 +16,6 @@ footer {
   background-image: url("../img/imageFooter3.jpg"), url(""); }
 
 @font-face {
-  font-family: "Amaranth-Italic";
-  src: url("../fonts/Amaranth-Italic.otf"); }
-
-@font-face {
-  font-family: "Amaranth-Regular";
-  src: url("../fonts/Amaranth-Regular.otf"); }
-
-@font-face {
-  font-family: "Amaranth-Bold";
-  src: url("../fonts/Amaranth-Bold.otf"); }
-
-@font-face {
   font-family: "Cascadia";
   src: url("../fonts/Cascadia.ttf"); }
 
@@ -95,7 +83,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start; }
-  .preguntas__frecuentes .nombrePregunta {
+  .preguntas__frecuentes .nombre__Pregunta {
     width: 100%;
     text-align: center; }
   .preguntas__frecuentes ol {
@@ -197,7 +185,7 @@ boton, .limpiar__boton, .enviar__boton {
 
 /* extent */
 /* contacto */
-/* quienes somos  */
+/* funciones */
 .funciones {
   text-align: justify; }
   .funciones p {
@@ -223,14 +211,14 @@ boton, .limpiar__boton, .enviar__boton {
   border: 3px solid blue; }
 
 /* mapa */
-/* wuienes somos */
+/* funciones */
 @media screen and (min-width: 600px) {
   .footer p:hover {
     font-size: 110%; }
   .contenido__texto {
     width: 80vw; }
   .preguntas__frecuentes {
-    width: 85vw; }
+    width: 80vw; }
   .tutoriales ol {
     font-size: medium; }
   .contenedor__formulario form {
