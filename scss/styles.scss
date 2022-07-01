@@ -272,11 +272,11 @@ $valor in $map__img {
     }
 
     .contenido__texto {
-        width: 80vw;
+        width: $ancho-monitorB;
     }
 
     .preguntas__frecuentes {
-        width: 85vw;
+        width: $ancho-monitorB;
     }
 
     .tutoriales ol {
