@@ -65,12 +65,14 @@ contenido__texto {
     font-size: 140%;
     text-align: justify;
 }
+
 /* extent */
 
 
 /* index */
 .contenido__texto__I {
     @extend contenido__texto;
+
     span {
         font-style: italic;
     }
@@ -230,23 +232,28 @@ contenido__texto {
     @extend boton;
     background-color: lightgreen;
 }
+
 /* contacto */
 
 /* funciones */
-.contenido__texto__F{
+.contenido__texto__F {
     @extend contenido__texto;
+
     h2 {
         @include pad_vertical(20px, 5px);
         text-align: center;
         text-decoration: underline;
     }
 }
-.funciones{
+
+.funciones {
     text-align: justify;
-    p{
+
+    p {
         @include pad_vertical(15px, 2px);
     }
 }
+
 .img__muestra {
     display: flex;
     flex-flow: wrap;
@@ -291,6 +298,7 @@ $valor in $map__img {
     .contenedor__formulario form {
         width: 70%;
     }
+
     main {
         font-size: small;
     }
@@ -300,12 +308,15 @@ $valor in $map__img {
 @media screen and (min-width: map-get($map__ancho, alto)) {
 
     contenido__texto {
-        width: $ancho-monitor;   
+        width: $ancho-monitor;
     }
-    .contenido__texto__I {  /* el centrado de texto solo deve ser para el index */
+
+    .contenido__texto__I {
+        /* el centrado de texto solo deve ser para el index */
         text-align: center;
     }
-    .funciones{
+
+    .funciones {
         width: $ancho-monitor;
     }
 
@@ -323,11 +334,14 @@ $valor in $map__img {
     .contenedor__formulario form {
         width: 40%;
     }
+
     .botones input {
         width: 30%;
     }
+
     .img__muestra img {
-        max-width:  400px; ;
+        max-width: 400px;
+        ;
 
     }
 }
