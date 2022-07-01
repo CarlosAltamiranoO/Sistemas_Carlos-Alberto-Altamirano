@@ -49,7 +49,7 @@ main {
   flex-direction: column;
   justify-content: center;
   font-family: "IBM-regular"; }
-  main .titulo__main h3 {
+  main .titulo__main {
     text-align: center;
     color: darkred;
     margin-bottom: 40px; }
@@ -57,20 +57,24 @@ main {
 footer {
   grid-area: footer; }
 
-/* index */
-.contenido__texto {
+/* extent */
+boton, .limpiar__boton, .enviar__boton {
+  width: 40%;
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 3px; }
+
+contenido__texto, .contenido__texto__I, .contenido__texto__F {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  font-size: 150%;
+  font-size: 140%;
   text-align: justify; }
-  .contenido__texto h3 {
-    padding-top: 20px;
-    padding-bottom: 5px;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: larger; }
+
+/* extent */
+/* index */
+.contenido__texto__I span {
+  font-style: italic; }
 
 /* index */
 /* preguntas frecuentes */
@@ -170,22 +174,20 @@ footer {
         display: flex;
         justify-content: center; }
 
-/* extent */
-boton, .limpiar__boton, .enviar__boton {
-  width: 40%;
-  margin: 5px;
-  border: 2px solid;
-  border-radius: 3px; }
-
 .limpiar__boton {
   background-color: red; }
 
 .enviar__boton {
   background-color: lightgreen; }
 
-/* extent */
 /* contacto */
 /* funciones */
+.contenido__texto__F h2 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline; }
+
 .funciones {
   text-align: justify; }
   .funciones p {
@@ -215,7 +217,7 @@ boton, .limpiar__boton, .enviar__boton {
 @media screen and (min-width: 600px) {
   .footer p:hover {
     font-size: 110%; }
-  .contenido__texto {
+  contenido__texto, .contenido__texto__I, .contenido__texto__F {
     width: 80vw; }
   .preguntas__frecuentes {
     width: 80vw; }
@@ -227,8 +229,10 @@ boton, .limpiar__boton, .enviar__boton {
     font-size: small; } }
 
 @media screen and (min-width: 1024px) {
-  .contenido__texto {
-    width: 60vw;
+  contenido__texto, .contenido__texto__I, .contenido__texto__F {
+    width: 60vw; }
+  .contenido__texto__I {
+    /* el centrado de texto solo deve ser para el index */
     text-align: center; }
   .funciones {
     width: 60vw; }
@@ -241,5 +245,7 @@ boton, .limpiar__boton, .enviar__boton {
     width: 60vw; }
   .contenedor__formulario form {
     width: 40%; }
-    .contenedor__formulario form .botones__seccion .botones input {
-      width: 30%; } }
+  .botones input {
+    width: 30%; }
+  .img__muestra img {
+    max-width: 400px; } }

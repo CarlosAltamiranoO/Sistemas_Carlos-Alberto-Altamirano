@@ -38,7 +38,7 @@ main {
     font-family: "IBM-regular";
 
 
-    .titulo__main h3 {
+    .titulo__main {
         text-align: center;
         color: darkred;
         margin-bottom: 40px;
@@ -50,22 +50,29 @@ footer {
     grid-area: footer;
 }
 
+/* extent */
+boton {
+    width: 40%;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 3px;
+}
 
-
-/* index */
-.contenido__texto {
+contenido__texto {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    font-size: 150%;
+    font-size: 140%;
     text-align: justify;
+}
+/* extent */
 
-    h3 {
-        @include pad_vertical(20px, 5px);
-        text-align: center;
-        text-decoration: underline;
-        font-weight: bold;
-        font-size: larger;
+
+/* index */
+.contenido__texto__I {
+    @extend contenido__texto;
+    span {
+        font-style: italic;
     }
 }
 
@@ -214,14 +221,6 @@ footer {
     }
 }
 
-/* extent */
-boton {
-    width: 40%;
-    margin: 5px;
-    border: 2px solid;
-    border-radius: 3px;
-}
-
 .limpiar__boton {
     @extend boton;
     background-color: red;
@@ -231,11 +230,17 @@ boton {
     @extend boton;
     background-color: lightgreen;
 }
-
-/* extent */
 /* contacto */
 
 /* funciones */
+.contenido__texto__F{
+    @extend contenido__texto;
+    h2 {
+        @include pad_vertical(20px, 5px);
+        text-align: center;
+        text-decoration: underline;
+    }
+}
 .funciones{
     text-align: justify;
     p{
@@ -271,7 +276,7 @@ $valor in $map__img {
         font-size: 110%;
     }
 
-    .contenido__texto {
+    contenido__texto {
         width: $ancho-monitorB;
     }
 
@@ -294,8 +299,10 @@ $valor in $map__img {
 
 @media screen and (min-width: map-get($map__ancho, alto)) {
 
-    .contenido__texto {
-        width: $ancho-monitor;
+    contenido__texto {
+        width: $ancho-monitor;   
+    }
+    .contenido__texto__I {  /* el centrado de texto solo deve ser para el index */
         text-align: center;
     }
     .funciones{
@@ -315,9 +322,12 @@ $valor in $map__img {
 
     .contenedor__formulario form {
         width: 40%;
+    }
+    .botones input {
+        width: 30%;
+    }
+    .img__muestra img {
+        max-width:  400px; ;
 
-        .botones__seccion .botones input {
-            width: 30%;
-        }
     }
 }
